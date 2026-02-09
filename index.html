@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XU Irène | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Salut, je suis <span>XU Irène</span></h1>
+        <p>Étudiante en informatique</p>
+        <a href="#projets" class="btn">Voir mes travaux</a>
+    </section>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        
+        <div class="projects-container">
+
+            <article class="project-item">
+                <div class="project-image">
+                    <img src="img/MCD sous looping.png" alt="MCD sous looping"/>
+                </div>
+                <div class="project-content">
+                    <h3>Gestion de données de tickets</h3>
+                    <p>J'ai pu participé l'analyse des données qui permettra par la suite d'extraire des informations statistiques à partir de la base de données créée.
+                        Un modèle a été conçu en prenant en compte un contexte et ses contraintes,
+                        puis à partir des requêtes saisi en SQL, j'ai pu participé aux réponses d'une problématique préalablement sélectionnée.
+                    </p>
+                    <p>Ce projet m'a permis de développer mes compétences en analyse de données, en conception d'un modèle à partir de l'analyse et en SQL.</p>
+                    <p><b>Technologies utilisées :</b> SQL, Looping, Access</p>
+                    <a href="pdf/Projet_BD_SQL.pdf" class="btn-link">Rapport →</a>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-image">
+                    <img src="img/guest page.png" alt="Page d'accueil du site en tant qu'invité"/>
+                </div>
+                <div class="project-content">
+                    <h3>Application Web et Mobile Together</h3>
+                    <p>
+                        Le projet Together adopte une logique de développement durable et d’engagement citoyen en favorisant la mise en relation entre offre et demande de bénévolat.
+                        Il contribue ainsi à renforcer le tissu social, à soutenir les initiatives locales et à encourager des actions concrètes dans des domaines comme l’écologie, l’éducation ou la solidarité humaine.
+                    </p>
+                    <p>
+                        Ce projet m'a permis de développer mes compétences en développement web et mobile avec ReactNative et en travail d'équipe.
+                    </p>
+                    <p><b>Technologies utilisées (Front-end) :</b> ReactNative, Node.js, Expo, TypeScript</p>
+                    <a href="https://github.com/lyric-s/together-app" class="btn-link">Voir sur GitHub →</a>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-image">
+                    <img src="img/home page dons.png" alt="Page d'accueil mobile de dons" style="display: block; margin: 0 auto; width: auto;"/>
+                </div>
+                <div class="project-content">
+                    <h3>Application mobile sur la gestion des dons</h3>
+                    <p>
+                        Le projet consistait à créer une application mobile afin de faciliter la mise en relation entre particuliers et associations pour permettre d'effectuer des dons à celles-ci.
+                    </p>
+                    <p>
+                        Ce projet m'a permis de développer mes compétences en développement mobile et en travail d'équipe.
+                    </p>
+                    <p>
+                        <b>Technologies utilisées :</b> Kotlin, Node.js, XML, MongoDB Atlas, API Rest
+                    </p>
+                    <a href="https://github.com/irenex30/Application-mobile-dons" class="btn-link">Voir sur GitHub →</a>
+                </div>
+            </article>
+            
+            </div>
+    </section>
+
+    <section id="apropos">
+        <h2>À Propos de moi</h2>
+        <div class="about-content">
+            <p>
+                Je suis actuellement étudiante en troisième année d'informatique à l'IUT Paris - Rives de Seine.
+                Ce site me permet de partager certains de mes projets que j'ai réalisés pendant mes études.
+                Et pour valider mon année, je recherche actuellement un stage à partir du 23 février 2026.
+                Vous pouvez trouver mon CV en cliquant sur le bouton ci-dessous.
+            </p>
+            <p>
+                J'aime apprendre de nouvelles technologies. 
+                Quand je ne code pas, je m'intéresse au sport, aux séries.
+            </p>
+            <div style="margin-top: 30px;">
+                <a href="CV_XU_IRENE.pdf" class="btn btn-cv" target="_blank" rel="CV_XU_IRENE">
+                    Voir mon CV (PDF)
+                </a>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        <p>Disponible pour de nouvelles opportunités !</p>
+        <p>Email: irenehu010@gmail.com</p>
+        <a href="irenehu010@gmail.com" class="btn">Envoyer un mail</a>
+    </section>
+
+    <a href="#" id="backToTop" title="Retour en haut">↑</a>
+
+    <script>
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        });
+    </script>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/irenex30" target="_blank" title="Mon GitHub">
+                <img src="img/github.png" alt="Github" class="icon"/>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ir%C3%A8ne-xu-06a405277/" target="_blank" title="Mon Profil Linkedin">
+                <img src="img/linkedin.png" alt="Linkedin" class="icon">
+            </a>
+        </div>
+        <p>&copy; 2026 - Inspired of Template designed & developed by <a href="https://nisar.dev/">Nisar</a></p>
+    </footer>
+</body>
+</html>
